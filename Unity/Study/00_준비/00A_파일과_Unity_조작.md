@@ -1,0 +1,83 @@
+# 준비 A. 파일부터 Unity 조작까지
+
+> 모르는 단어는 [전문 용어 전체 색인](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4_%EC%82%AC%EC%A0%84.md)에서 영문·한글로 찾습니다. 이 장 맨 아래에는 등장 용어의 바로가기 목록이 있습니다.
+
+목표: 어디에 저장되는지 알고, 같은 이름의 파일과 화면 속 물체를 구분합니다. 설치·계정·코딩 경험이 없어도 여기서 시작합니다.
+
+## 이 자료 폴더와 프로젝트 폴더는 다르다
+
+- 바탕화면의 `Unity6.6_그래픽 실습공부 자료`는 읽는 문서입니다. Unity Hub에 등록할 폴더가 아닙니다.
+- 실습 프로젝트는 `C:/KNDA_NCAI/UnityProject/Learning/261007 NC강사님/Unity6.6_URPVarco`입니다. 그 안에 `Assets`, `Packages`, `ProjectSettings`가 함께 있어야 합니다.
+- 문서에서 `Assets/...`라고 쓰면 이 프로젝트 안의 경로입니다. Unity의 Project 창에서도 같은 폴더를 찾습니다.
+- 다른 PC에서는 프로젝트 위치가 달라집니다. 자료 내부 링크는 그대로 쓸 수 있지만, 실제 소스 파일로 가는 링크는 이 PC 경로를 사용하므로 다른 PC에서는 위 폴더 기준으로 직접 찾습니다.
+
+## 컴퓨터가 보관하는 것은 숫자다
+
+**데이터**는 저장하고 계산할 수 있는 정보입니다. 글자·사진·3D 물체도 컴퓨터 안에서는 숫자 규칙으로 기록합니다. 그 묶음 하나가 **파일**, 파일을 정리하는 장소가 **폴더**입니다. **프로그램**은 그 숫자를 읽고 처리하는 명령 묶음입니다.
+
+파일 이름 끝의 `.png`, `.fbx`, `.md`를 **확장자**라고 합니다. 어떤 규칙으로 읽을지 알려 주는 표지입니다. 표지만 바꿔도 내용이 바뀌지는 않습니다. `robot.usdc`를 `robot.usda`로 바꿔도 글자로 읽을 수 있는 파일로 변환되지 않습니다.
+
+**텍스트 파일**은 글자로 읽는 규칙을 씁니다. `.md`는 제목·표·링크를 표시하는 Markdown 문서입니다. **바이너리 파일**은 해당 프로그램이 해석할 숫자 배치를 쓰며, 메모장에 열면 읽기 어려울 수 있습니다. 텍스트 역시 실제 저장은 숫자이며, UTF-8은 그 숫자와 글자를 대응시키는 약속입니다.
+
+Windows 파일 탐색기에서 `보기 > 표시 > 파일 확장명`을 켭니다. Windows 버전에 따라 `보기` 탭의 `파일 확장명` 체크로 표시될 수 있습니다. `robot.fbx.txt`와 `robot.fbx`가 다른 파일임을 확인할 수 있습니다.
+
+## 경로와 참조
+
+**경로**는 파일 주소입니다. `C:/...`부터 시작하면 절대 경로, `../README.md`처럼 현재 폴더를 기준으로 쓰면 상대 경로입니다. `..`는 한 단계 위 폴더입니다.
+
+**참조**는 다른 자료를 가리키는 연결입니다. 재질 파일 안에 이미지 전체를 늘 복사하는 대신 “이 이미지를 읽어라”라는 연결을 저장합니다. 그래서 씬을 복사해도 같은 재질을 가리킬 수 있습니다. 연결된 원본을 바꾸면 여러 씬에서 함께 달라집니다.
+
+비유의 한계도 알아둡니다. Unity는 단순 파일 이름만으로 연결하지 않고 `.meta`에 담긴 GUID라는 고유 이름표를 사용합니다. 파일을 이동할 때 Unity Project 창을 쓰고 `.meta`를 함께 보존하는 이유입니다.
+
+## Unity가 담당하는 일
+
+Unity는 물체 배치·화면 계산·입력·소리·실행 파일 제작을 묶어 제공하는 **게임 엔진**입니다. **Unity Hub**는 프로젝트와 Unity 버전을 관리하는 시작 프로그램, **Unity Editor**는 실제 제작 화면입니다. 이 프로젝트의 기록된 버전은 `6000.6.0f1`입니다.
+
+1. Unity Hub를 엽니다. 없으면 공식 [Unity Hub 설치 안내](https://docs.unity3d.com/hub/manual/InstallHub.html)를 따라 설치합니다.
+2. Hub의 `Projects > Add > Add project from disk`에서 위 프로젝트 최상위 폴더를 고릅니다. 버전에 따라 `Add`가 바로 보입니다.
+3. 필요한 Editor가 없다면 Hub의 `Installs`에서 해당 버전을 설치합니다. 목록에 없으면 [공식 Editor 버전 보관소](https://unity.com/releases/editor/archive)에서 정확한 버전을 찾아 Hub로 연결합니다.
+4. 프로젝트를 엽니다. 이미 다른 Editor로 열려 있으면 중복으로 열지 않습니다. 버전 변환 안내가 나타나면 현재 프로젝트 버전과 선택 버전이 같은지부터 확인합니다.
+5. 아래 상태 표시에서 가져오기와 코드 준비가 끝날 때까지 기다립니다. 첫 실행에는 시간이 걸립니다.
+6. `Window > General > Console`을 열어 빨간 오류를 확인합니다. 오류가 남으면 17장의 해당 증상을 먼저 해결합니다. 이 자료 작성 중 설치·로그인·Editor 실행을 대신 수행한 것은 아닙니다.
+
+## 설명에 나오는 조작을 정확히 읽는다
+
+| 표현 | 실제 손동작 | 확인할 결과 |
+|---|---|---|
+| 클릭 / 더블클릭 | 왼쪽 버튼 한 번 / 빠르게 두 번 | 선택 / 파일이나 편집 화면 열림 |
+| 우클릭 | 오른쪽 버튼 한 번 | 현재 대상에 가능한 메뉴 열림 |
+| `A > B > C` | A 메뉴를 열고 B, C 순서로 선택 | `>`는 키보드 입력 문자가 아님 |
+| 드래그 앤 드롭 | 왼쪽 버튼을 누른 채 이동한 뒤 놓음 | 문서에 적힌 **대상 슬롯**에 이름이 나타남 |
+| 펼치기 | 항목 왼쪽 작은 삼각형 클릭 | 숨겨진 자식이나 설정 표시 |
+| 슬롯 | 다른 파일·물체를 연결하는 입력 칸 | None 대신 연결한 대상 이름 표시 |
+| 체크박스 | 작은 사각형 클릭 | 켬/끔 전환. 물체 활성과 컴포넌트 활성은 다름 |
+| 숫자 입력 | 숫자 칸을 클릭해 기존 값 선택 → 새 값 → Enter | 해당 값 확정 |
+| `Ctrl+D` | Ctrl을 누른 채 D 한 번 | **선택된 창의 선택 대상** 복제 |
+| `Ctrl+S` / `Ctrl+Z` | 저장 / 직전 지원 작업 취소 | 파일 생성·변환 전체가 취소된다는 보장은 없음 |
+
+Inspector 오른쪽 위 자물쇠가 잠겼다면 선택을 바꿔도 이전 대상을 보여 줍니다. 연결 실습 중에는 잠금을 풀고 Inspector 맨 위 이름이 지금 작업할 대상인지 봅니다. 텍스트 입력 칸이 선택된 상태에서 W·E·R을 누르면 도구 전환 대신 글자가 입력될 수 있습니다. 먼저 Scene 창의 빈 곳을 클릭합니다.
+
+## 자주 혼동하는 네 버튼
+
+`Ctrl+S`는 현재 씬 등의 편집 내용을 저장합니다. 모델 Inspector의 `Apply`는 변경한 임포트 설정으로 원본을 다시 읽습니다. 프리팹의 `Overrides > Apply`는 인스턴스 차이를 공용 원본에 보냅니다. `Play`는 게임 동작 시험을 시작합니다. 이름이 비슷해도 저장 범위가 다릅니다.
+
+Project에서 찾은 파일을 Hierarchy로 놓으면 **배치**, Hierarchy 물체를 Inspector 참조 칸으로 놓으면 **연결**, Hierarchy 물체를 Project 폴더로 놓으면 경우에 따라 **프리팹 만들기**입니다. “드래그한다”만 읽지 말고 출발 창과 도착 칸을 함께 읽습니다.
+
+## 연습과 답
+
+실제 파일을 바꾸지 말고 두 폴더의 위치를 찾아보세요. 문서 폴더에는 README.md, Unity 프로젝트에는 Assets·Packages·ProjectSettings가 있습니다. 다음으로 Project 창에서 씬 파일을 한 번 선택하고 Inspector 맨 위 이름을 확인합니다.
+
+질문: 씬 복사본에서 공용 재질을 바꾸면 원본도 달라질까요? **답:** 같은 재질을 참조하면 달라집니다. 02장에서 씬을, 05장에서 재질을 각각 복사합니다.
+
+## 이 장의 용어 찾기
+
+모르는 말은 아래 링크 또는 [전체 용어 색인](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4_%EC%82%AC%EC%A0%84.md)에서 찾습니다. 영문 UI 이름도 검색할 수 있습니다.
+
+- PC와·Unity: [.meta](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#meta) · [Component](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#component) · [Console](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#console) · [Editor](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#editor) · [GUID](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#guid) · [Hierarchy](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#hierarchy) · [Import](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#import) · [Inspector](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#inspector) · [Instance](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#instance) · [Markdown](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#markdown) · [None](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#none) · [Play](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#play) · [Prefab](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#prefab) · [Project](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#project) · [Project Settings](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#project-settings) · [Unity](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#unity) · [Unity Hub](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#hub) · [UTF-8](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#utf8) · [게임 엔진](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#engine) · [데이터](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#data) · [바이너리](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#binary) · [상대 경로](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#relative-path) · [절대 경로](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#absolute-path) · [텍스트 파일](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#text-file) · [프로그램](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#program) · [확장자](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/01_PC%EC%99%80_Unity.md#extension)
+
+- 수학과·모델: [3D](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/02_%EC%88%98%ED%95%99%EA%B3%BC_%EB%AA%A8%EB%8D%B8.md#3d) · [Triangle](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/02_%EC%88%98%ED%95%99%EA%B3%BC_%EB%AA%A8%EB%8D%B8.md#triangle)
+
+- 화면의·속성과·메뉴: [Apply](../90_%EC%B0%B8%EA%B3%A0/%EC%9A%A9%EC%96%B4%EC%82%AC%EC%A0%84/07_%ED%99%94%EB%A9%B4%EC%9D%98_%EC%86%8D%EC%84%B1%EA%B3%BC_%EB%A9%94%EB%89%B4.md#apply-import)
+
+<!-- study-navigation -->
+[목차](../README.md) · [다음](00B_%EC%A0%90%EA%B3%BC_%EB%B0%A9%ED%96%A5%EA%B3%BC_%EC%8B%9C%EA%B0%84.md)
