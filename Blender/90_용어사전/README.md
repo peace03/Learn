@@ -1,10 +1,6 @@
 # Blender 통합 용어사전
 
-**440개 핵심 용어**, 10개 분야입니다. 한 항목에 영문·한글·약어를 함께 적었습니다. **Ctrl+F**로 아는 표기를 검색한 뒤 링크를 눌러 뜻과 원리를 읽습니다.
-
-모든 메뉴·모든 애드온의 모든 식별자를 수록한 것은 아닙니다. Blender 전 분야의 기초·공통 용어와 이 공부 자료의 전문 용어를 다룹니다. 설명에 쓰인 전문 용어도 관련 항목으로 연결합니다.
-
-같은 낱말의 다른 뜻은 문맥을 확인합니다. 예: 거울 반전과 빛 반사, 유체 도메인과 속성 도메인, 뼈 영향 Weight와 물리 Mass.
+**454개 핵심 용어**, 10개 분야입니다. Ctrl+F로 한글·영문·약어를 검색하고 설명 링크를 누릅니다. 뜻 다음에는 원리·용도·한계를 읽습니다.
 
 ## 분야별 찾기
 
@@ -12,7 +8,7 @@
 |---|---|
 | [화면과 데이터](01_화면과데이터.md) | 70 |
 | [좌표와 변환](02_좌표와변환.md) | 42 |
-| [메시와 모델링](03_메시와모델링.md) | 67 |
+| [메시와 모델링](03_메시와모델링.md) | 81 |
 | [UV와 재질](04_UV와재질.md) | 53 |
 | [조명 렌더링과 색](05_조명렌더색.md) | 49 |
 | [리깅과 애니메이션](06_리깅과애니메이션.md) | 37 |
@@ -22,8 +18,6 @@
 | [파일 자동화와 성능](10_파일자동화성능.md) | 47 |
 
 ## 전체 항목: 영문 기준
-
-한글은 오른쪽 별칭에서도 검색할 수 있습니다. 각 행은 독립된 설명 항목으로 이동합니다.
 
 | 영문·대표 이름 | 한글·다른 표기 |
 |---|---|
@@ -53,6 +47,7 @@
 | [API](10_%ED%8C%8C%EC%9D%BC%EC%9E%90%EB%8F%99%ED%99%94%EC%84%B1%EB%8A%A5.md#api) |  |
 | [Append](10_%ED%8C%8C%EC%9D%BC%EC%9E%90%EB%8F%99%ED%99%94%EC%84%B1%EB%8A%A5.md#append) | 어펜드 |
 | [Apply](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#apply) | 적용 |
+| [Apply Modifier](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#modifier-apply) | 모디파이어 적용 |
 | [Apply Scale](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#apply-scale) | 스케일 적용 |
 | [Area Light](05_%EC%A1%B0%EB%AA%85%EB%A0%8C%EB%8D%94%EC%83%89.md#area-light) | 면광원 |
 | [Armature](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#armature) | 아마추어 · 뼈대 |
@@ -62,6 +57,7 @@
 | [Asset Browser](10_%ED%8C%8C%EC%9D%BC%EC%9E%90%EB%8F%99%ED%99%94%EC%84%B1%EB%8A%A5.md#asset-browser) | 에셋 브라우저 |
 | [Attribute](07_%EC%A7%80%EC%98%A4%EB%A9%94%ED%8A%B8%EB%A6%AC%EB%85%B8%EB%93%9C.md#attribute) | 어트리뷰트 · 속성 자료 |
 | [Audio](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#audio) | 오디오 |
+| [Auto Merge](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#auto-merge) | Auto Merge Vertices · 자동 정점 병합 |
 | [Automatic Weights](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#automatic-weights) | 자동 가중치 |
 | [Axis](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#axis) | 축 |
 | [Backface Culling](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#backface-culling) | 뒷면 제거 |
@@ -81,6 +77,7 @@
 | [Boolean Value](07_%EC%A7%80%EC%98%A4%EB%A9%94%ED%8A%B8%EB%A6%AC%EB%85%B8%EB%93%9C.md#boolean-value) | 불리언 값 |
 | [Boundary](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#boundary) | 경계 에지 |
 | [Bounding Box](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#bounding-box) | 경계 상자 |
+| [Box Select](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#box-select) | 박스 선택 · 사각 선택 |
 | [bpy](10_%ED%8C%8C%EC%9D%BC%EC%9E%90%EB%8F%99%ED%99%94%EC%84%B1%EB%8A%A5.md#bpy) |  |
 | [Brush](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#brush) | 브러시 |
 | [BSDF](04_UV%EC%99%80%EC%9E%AC%EC%A7%88.md#bsdf) |  |
@@ -104,6 +101,7 @@
 | [Composite](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#composite-node) | 최종 합성 출력 |
 | [Compositor](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#compositor) | 컴포지터 · 합성 |
 | [Compression](05_%EC%A1%B0%EB%AA%85%EB%A0%8C%EB%8D%94%EC%83%89.md#compression) | 압축 |
+| [Connected Only](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#connected-only) | 연결된 부분만 |
 | [Constant](07_%EC%A7%80%EC%98%A4%EB%A9%94%ED%8A%B8%EB%A6%AC%EB%85%B8%EB%93%9C.md#constant) | 상수 |
 | [Constraint](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#constraint) | 컨스트레인트 · 제약 |
 | [Container](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#container) | 컨테이너 |
@@ -251,7 +249,12 @@
 | [Merge](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#merge) | 병합 |
 | [Merge by Distance](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#merge-distance) | 거리로 병합 |
 | [Mesh](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#mesh) | 메시 |
+| [Mesh Symmetry](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mesh-symmetry) | X Mirror · 편집 대칭 |
 | [Metallic](04_UV%EC%99%80%EC%9E%AC%EC%A7%88.md#metallic) | 금속성 |
+| [Mirror Bisect](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mirror-bisect) | 미러 이등분 |
+| [Mirror Clipping](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mirror-clipping) | 미러 클리핑 |
+| [Mirror Flip](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mirror-flip) | 미러 기준 쪽 반전 |
+| [Mirror Merge](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mirror-merge) | 미러 중앙 병합 |
 | [Mirror Modifier](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mirror-modifier) | 미러 모디파이어 |
 | [Mode](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#mode) | 모드 |
 | [Modeling](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#modeling) | 모델링 |
@@ -320,8 +323,10 @@
 | [Principled BSDF](04_UV%EC%99%80%EC%9E%AC%EC%A7%88.md#principled) | 프린시플드 BSDF |
 | [Procedural](04_UV%EC%99%80%EC%9E%AC%EC%A7%88.md#procedural) | 절차적 |
 | [Profiling](10_%ED%8C%8C%EC%9D%BC%EC%9E%90%EB%8F%99%ED%99%94%EC%84%B1%EB%8A%A5.md#profiling) | 프로파일링 |
+| [Projected from View](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#projected-view) | 화면 투영 기준 |
 | [Properties](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#properties) | 프로퍼티 에디터 |
 | [Proportional Editing](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#proportional) | 비례 편집 |
+| [Proportional Size](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#proportional-size) | 비례 편집 반경 |
 | [Proxy](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#proxy) | 프록시 |
 | [Python](10_%ED%8C%8C%EC%9D%BC%EC%9E%90%EB%8F%99%ED%99%94%EC%84%B1%EB%8A%A5.md#python) | 파이썬 |
 | [Quad](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#quad) | 쿼드 · 사각면 |
@@ -388,6 +393,7 @@
 | [Simulation Zone](07_%EC%A7%80%EC%98%A4%EB%A9%94%ED%8A%B8%EB%A6%AC%EB%85%B8%EB%93%9C.md#simulation-zone) | 시뮬레이션 존 |
 | [Single User](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#single-user) | 싱글 유저 |
 | [Skinning](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#skinning) | 스키닝 |
+| [Smooth Falloff](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#smooth-falloff) | 부드러운 감쇠 |
 | [Snap](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#snap) | 스냅 |
 | [Socket](04_UV%EC%99%80%EC%9E%AC%EC%A7%88.md#socket) | 소켓 |
 | [Soft Body](08_%EB%AC%BC%EB%A6%AC%EC%99%80%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98.md#soft-body) | 연체 |
@@ -420,6 +426,7 @@
 | [Toolbar](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#toolbar) | 툴바 |
 | [Top](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#top-view) | 위 보기 |
 | [Topology](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#topology) | 토폴로지 |
+| [Topology Mirror](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#topology-mirror) | 토폴로지 미러 |
 | [Tracking](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#tracking) | 트래킹 · 추적 |
 | [Tracking Marker](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#marker) | 추적 마커 |
 | [Transform](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#transform) | 변환 |
@@ -448,6 +455,7 @@
 | [Velocity](08_%EB%AC%BC%EB%A6%AC%EC%99%80%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98.md#velocity) | 속도 벡터 |
 | [Vertex](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#vertex) | 정점 |
 | [Vertex Group](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#vertex-group) | 버텍스 그룹 · 정점 그룹 |
+| [Vertex Select](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#vertex-select) | 정점 선택 모드 |
 | [Video Sequencer](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#vse) | Video Sequence Editor · VSE · 비디오 시퀀서 |
 | [View](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#view) | 뷰 · 시점 |
 | [View Layer](05_%EC%A1%B0%EB%AA%85%EB%A0%8C%EB%8D%94%EC%83%89.md#view-layer) | 뷰 레이어 |
@@ -469,7 +477,6 @@
 | [Z Depth](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#z-depth) | 깊이 패스 |
 
 ## 한글 별칭: 가나다순
-
 
 - [3D 커서](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#cursor)
 - [USD 레이어](10_%ED%8C%8C%EC%9D%BC%EC%9E%90%EB%8F%99%ED%99%94%EC%84%B1%EB%8A%A5.md#usd-layer)
@@ -581,14 +588,20 @@
 - [모든 변환 적용](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#all-transforms)
 - [모디파이어](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#modifier)
 - [모디파이어 스택](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#modifier-stack)
+- [모디파이어 적용](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#modifier-apply)
 - [모서리](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#edge)
 - [모션 캡처](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#motion-capture)
 - [무비 클립 에디터](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#movie-clip-editor)
 - [문맥](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#context)
 - [물리 기반 렌더링](04_UV%EC%99%80%EC%9E%AC%EC%A7%88.md#pbr)
 - [미러](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#reflection)
+- [미러 기준 쪽 반전](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mirror-flip)
 - [미러 모디파이어](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mirror-modifier)
+- [미러 이등분](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mirror-bisect)
+- [미러 중앙 병합](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mirror-merge)
+- [미러 클리핑](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mirror-clipping)
 - [바운스](05_%EC%A1%B0%EB%AA%85%EB%A0%8C%EB%8D%94%EC%83%89.md#bounce)
+- [박스 선택](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#box-select)
 - [반복 존](07_%EC%A7%80%EC%98%A4%EB%A9%94%ED%8A%B8%EB%A6%AC%EB%85%B8%EB%93%9C.md#repeat-zone)
 - [반전](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#reflection)
 - [방출](04_UV%EC%99%80%EC%9E%AC%EC%A7%88.md#emission)
@@ -616,6 +629,7 @@
 - [본 부모 연결](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#bone-parent)
 - [본 상대 연결](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#bone-relative)
 - [볼륨](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#volume)
+- [부드러운 감쇠](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#smooth-falloff)
 - [부드러운 음영](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#smooth-shading)
 - [부모](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#parent)
 - [분리](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#separate)
@@ -630,6 +644,7 @@
 - [블렌더](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#blender)
 - [비디오 시퀀서](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#vse)
 - [비례 편집](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#proportional)
+- [비례 편집 반경](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#proportional-size)
 - [비매니폴드](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#non-manifold)
 - [비색상 데이터](04_UV%EC%99%80%EC%9E%AC%EC%A7%88.md#non-color)
 - [비선형 애니메이션](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#nla)
@@ -641,6 +656,7 @@
 - [뼈](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#bone)
 - [뼈 머리와 꼬리](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#bone-head-tail)
 - [뼈대](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#armature)
+- [사각 선택](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#box-select)
 - [사각면](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#quad)
 - [사용자 인터페이스](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#ui)
 - [사용자 정의 법선](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#custom-normal)
@@ -737,6 +753,7 @@
 - [엠프티](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#empty)
 - [역운동학](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#ik)
 - [연결 복제](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#linked-duplicate)
+- [연결된 부분만](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#connected-only)
 - [연체](08_%EB%AC%BC%EB%A6%AC%EC%99%80%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98.md#soft-body)
 - [오디오](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#audio)
 - [오른쪽 보기](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#right-view)
@@ -788,6 +805,7 @@
 - [입자](08_%EB%AC%BC%EB%A6%AC%EC%99%80%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98.md#particle)
 - [자기 충돌](08_%EB%AC%BC%EB%A6%AC%EC%99%80%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98.md#self-collision)
 - [자동 가중치](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#automatic-weights)
+- [자동 정점 병합](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#auto-merge)
 - [자식](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#child)
 - [장기 지원](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#lts)
 - [장면](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#scene)
@@ -810,6 +828,7 @@
 - [정반사](04_UV%EC%99%80%EC%9E%AC%EC%A7%88.md#specular)
 - [정점](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#vertex)
 - [정점 그룹](06_%EB%A6%AC%EA%B9%85%EA%B3%BC%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98.md#vertex-group)
+- [정점 선택 모드](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#vertex-select)
 - [정점 순서](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#winding)
 - [정투영](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#orthographic)
 - [정해진 시점 메뉴](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#viewpoint)
@@ -867,6 +886,7 @@
 - [텍스처 페인트](04_UV%EC%99%80%EC%9E%AC%EC%A7%88.md#texture-paint)
 - [텍스트 오브젝트](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#text-object)
 - [토폴로지](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#topology)
+- [토폴로지 미러](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#topology-mirror)
 - [투과](04_UV%EC%99%80%EC%9E%AC%EC%A7%88.md#transmission)
 - [툴바](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#toolbar)
 - [트래킹](09_2D%ED%95%A9%EC%84%B1%EA%B3%BC%EC%98%81%EC%83%81.md#tracking)
@@ -877,6 +897,7 @@
 - [패키지](10_%ED%8C%8C%EC%9D%BC%EC%9E%90%EB%8F%99%ED%99%94%EC%84%B1%EB%8A%A5.md#package)
 - [페이스 세트](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#face-set)
 - [페이크 유저](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#fake-user)
+- [편집 대칭](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#mesh-symmetry)
 - [편집 모드](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#edit-mode)
 - [평가 계산](10_%ED%8C%8C%EC%9D%BC%EC%9E%90%EB%8F%99%ED%99%94%EC%84%B1%EB%8A%A5.md#evaluation)
 - [평면](02_%EC%A2%8C%ED%91%9C%EC%99%80%EB%B3%80%ED%99%98.md#plane)
@@ -912,6 +933,7 @@
 - [헤어 커브](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#hair-curves)
 - [형상 구성 요소](07_%EC%A7%80%EC%98%A4%EB%A9%94%ED%8A%B8%EB%A6%AC%EB%85%B8%EB%93%9C.md#geometry-component)
 - [화각](05_%EC%A1%B0%EB%AA%85%EB%A0%8C%EB%8D%94%EC%83%89.md#fov)
+- [화면 투영 기준](03_%EB%A9%94%EC%8B%9C%EC%99%80%EB%AA%A8%EB%8D%B8%EB%A7%81.md#projected-view)
 - [확장 기능](10_%ED%8C%8C%EC%9D%BC%EC%9E%90%EB%8F%99%ED%99%94%EC%84%B1%EB%8A%A5.md#extension)
 - [환경설정](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#preferences)
 - [활성 오브젝트](01_%ED%99%94%EB%A9%B4%EA%B3%BC%EB%8D%B0%EC%9D%B4%ED%84%B0.md#active)
@@ -921,4 +943,4 @@
 - [힘](08_%EB%AC%BC%EB%A6%AC%EC%99%80%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98.md#force)
 - [힘장](08_%EB%AC%BC%EB%A6%AC%EC%99%80%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98.md#force-field)
 
-[부츠 실습](../10_목적별/001_반대발_부츠/README.md) · [공통 개념](../20_공통개념/README.md) · [전체 시작](../README.md)
+[방법 목록](../10_방법/README.md) · [공통 개념](../20_공통개념/README.md) · [전체 목차](../README.md)
