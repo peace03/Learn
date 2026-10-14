@@ -1,0 +1,40 @@
+{
+  "destination": "C:\\Users\\mbc\\Desktop\\Learn\\Unity",
+  "backup": "C:\\Users\\mbc\\Desktop\\Learn\\_문서백업\\Unity_Cloth_20261014_120639",
+  "original_hashes": {
+    "README.md": "9607aa1b4771415a6b298f1e2ecfc5d1f64a355505173c68b4b36c44a031eb71",
+    "Study/04_움직임/10_리깅_Avatar와_애니메이션.md": "14555bee160efed7cae1d82b7b8b83c5b03f0a2ecbfe25dc47e84561fefbf6e7",
+    "Study/90_참고/검증기록.md": "0beba19d2392d91cee24bcc579eed6e51d0ecdb83d2cb2a5d5cf321f1d35bc2c",
+    "Study/90_참고/공식문서.md": "16a10dfe4e42b378b6d43919004eba6a4389bcbc376e48480f87dc6bed450633",
+    "Study/90_참고/용어_사전.md": "fa46e9cb4d14f9cb137dffcba961fd982cbcf8d89d3dd16ca282e5611f11947b",
+    "Study/README.md": "19d940e9f746bd91e0ea6de850c3900303e4e1d201509d77633cb108b52b8058"
+  },
+  "final_hashes": {
+    "README.md": "23020b26929af9c1326fe50959ea19ec2f6cdf4f4e0151a0bce26cce6575ce99",
+    "Study/04_움직임/10_리깅_Avatar와_애니메이션.md": "88109d74c347f26b645e82af660ff8a6717c5294e683755eb73a801b24128893",
+    "Study/04_움직임/10A_Unity_Cloth/01_천한장_방법.md": "b7ed57dac33552ffa7b513c5999ed0d910d49e448ed4f4187826b51ce668b270",
+    "Study/04_움직임/10A_Unity_Cloth/02_캐릭터옷_방법.md": "28888b2fb5b2704fbbe0b5bcda66356b12fa5f1db30c54517686dcc697c6bab3",
+    "Study/04_움직임/10A_Unity_Cloth/README.md": "265fe6ec89b31347f2a4f9fc1ac97b70d16a8e17bf0609a657495ac4362d8d8b",
+    "Study/04_움직임/10A_Unity_Cloth/개념과원리/README.md": "806b05e5cb74f19c3556b14a6bb0ee15188955da80487aa08dfa7fd4b3ce030b",
+    "Study/04_움직임/10A_Unity_Cloth/개념과원리/설정과문제해결.md": "4a7eee3c1fd3b7e34b48258ef614888eb87fa2809746f7effddb87065182bd22",
+    "Study/90_참고/검증기록.md": "7b55023cb728a12f370c91e983a65b05c739a47764e68d3b8f9332a64053f9d4",
+    "Study/90_참고/공식문서.md": "8116e5cc7d8037bb683b720e83c0c86d332bd1a487b278eb53ea80ffdb6fa17d",
+    "Study/90_참고/용어_사전.md": "b4919ab8510bc2c08243f776d4844b21a5d1127e15f02b472c9157eee394fae5",
+    "Study/90_참고/용어사전/11_Cloth와_천물리.md": "9cef0a0c36f7674a98698a01492fbcee8d7525a9476c85da0ebee06145328e99",
+    "Study/README.md": "72f8ecf77cf3da981aa306ba40c9617c2f7cd2a94f1da2be5bbbb13fcfe5a386"
+  },
+  "files": [
+    "README.md",
+    "Study/04_움직임/10_리깅_Avatar와_애니메이션.md",
+    "Study/04_움직임/10A_Unity_Cloth/01_천한장_방법.md",
+    "Study/04_움직임/10A_Unity_Cloth/02_캐릭터옷_방법.md",
+    "Study/04_움직임/10A_Unity_Cloth/README.md",
+    "Study/04_움직임/10A_Unity_Cloth/개념과원리/README.md",
+    "Study/04_움직임/10A_Unity_Cloth/개념과원리/설정과문제해결.md",
+    "Study/90_참고/검증기록.md",
+    "Study/90_참고/공식문서.md",
+    "Study/90_참고/용어_사전.md",
+    "Study/90_참고/용어사전/11_Cloth와_천물리.md",
+    "Study/README.md"
+  ]
+}
